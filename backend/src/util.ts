@@ -1,5 +1,6 @@
+
 export function random(len: number){
-    let options = "hgvsggvdludqweyogwgvguh54415616511"
+    let options = "hgvsggvdludqweyojsjhshjhgwgvguh54415616511"
     let length = options.length;
 
     let ans = ""
@@ -8,5 +9,5 @@ export function random(len: number){
         ans += options[Math.floor(Math.random()* length)]
     }
 
-    return ans;
+    return ans;    
 }
