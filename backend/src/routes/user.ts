@@ -6,9 +6,9 @@ export const userRouter = Router();
 
 const JWT_PASSWORD = "12345"
 
-userRouter.post("/signup" , (req, res) => {
+userRouter.post("/signup" ,async (req, res) => {
     const {username, password} = req.body;
-        const user = UserModel.create({
+        const user = await UserModel.create({
             username,
             password
         })
